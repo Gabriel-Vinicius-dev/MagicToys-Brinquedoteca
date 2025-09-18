@@ -1,0 +1,192 @@
+.mais-vendidos{
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    transition: 0.5s ease-in-out;
+}
+
+.meninas{
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    transition: 0.5s ease-in-out;
+}
+
+.meninos{
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    transition: 0.5s ease-in-out;
+}
+
+.bebes{
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    transition: 0.5s ease-in-out;
+}
+
+.mais-vendidos:hover{
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    box-shadow: #fff 0 0 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.meninas:hover{
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    box-shadow: #fff 0 0 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.meninos:hover{
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    box-shadow: #fff 0 0 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.bebes:hover{
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    box-shadow: #fff 0 0 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.title{
+    color: white;
+    font-size: 36px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: center;
+    column-gap: 80px;
+    row-gap: 50px;
+    padding: 3%;
+    margin: 0 auto;
+    height: 10%;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.card{
+    background-color: #fff;
+    border: 4px solid #3F0251;
+    border-radius: 25px;
+    height: 390px;
+    width: 220px;
+    min-width: 220px;
+    transition: 0.3s ease;
+}
+
+.card img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card h3{
+    font-size: 24px;
+    color: #3F0251;
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+}
+
+.card span{
+    color: #A45ECD;
+    text-decoration: line-through;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+}
+
+.card p{
+    color: #572063;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+    bottom: 25px;
+    left: 10px;
+}
+
+.card button{
+    background-color: #FBFF00;
+    color: #572063;
+    border: 2px solid #572063;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem       ;
+    position: relative;
+    bottom: 40px;
+    left: 35px;
+    padding: 5px 15px;
+    transition: 0.3s;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    width: 70%;
+}
+
+.card button:hover{
+    background-color: #3F0251;
+    color: #FBFF00;
+    box-shadow: 0 0 15px #3F0251;
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px #fff;
+    filter: opacity(0.9);
+    z-index: 0;
+}
+
+.vermais{
+    text-align:center;
+    margin-bottom: 10vw;
+    margin-bottom: 5vw;
+}
+
+.showmore {
+    margin-top: -10px;
+    padding: 13px 25px;
+    background-color: #FBFF00;
+    color: #3F0251;
+    border: 4px solid #3F0251;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    filter: opacity(0.85);
+}
+    
+.showmore:hover {
+    filter: opacity(1);
+    box-shadow: #fff 0 0 20px;
+}

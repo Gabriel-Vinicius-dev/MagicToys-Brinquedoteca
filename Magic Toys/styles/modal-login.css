@@ -1,0 +1,250 @@
+#sidebar-login {
+    position: fixed;
+    top: 0;
+    right: -400px; /* começa escondido */
+    width: 350px;
+    height: 100%;
+    background: #FEFFB8;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.5);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+#sidebar-login.ativo {
+    right: 0;
+}
+
+/* HEADER */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #572063;
+    position: relative;
+    left: -30px;
+    margin-left: 20px;
+}
+
+.titulo svg{
+    color: #572063;
+    padding: 1px;
+    margin-right: 20px;
+}
+
+/* FECHAR */
+#fechar-login {
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #572063;
+    display: flex;
+    align-items: center;
+}
+
+#fechar-login:hover {
+    color: #895D93;
+}
+
+/* FORM */
+#sidebar-login form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* BOTÕES DE LOGIN */
+/* BOTÕES DE LOGIN - um embaixo do outro */
+.opcoes-login {
+    display: flex;
+    flex-direction: column; /* muda para coluna */
+    gap: 12px; /* espaço entre os botões */
+}
+
+/* Botões individuais */
+.botao-codigo,
+.gmail,
+.face {
+    width: 100%; /* ocupa toda a largura igual aos inputs */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+    color: #fff;
+}
+
+/* Botões individuais */
+.botao-codigo {
+    border-radius: 50px;
+    background: #572063;
+    color: #FBFF00;
+    font-size: 17px;
+    border: 3px solid #572063;
+}
+
+.botao-codigo:hover {
+    background-color: #FBFF00;
+    color: #572063;
+    border: 3px solid #572063;
+}
+
+.gmail {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #895D93;
+}
+
+.gmail span{
+    font-weight: bold;
+    font-size: 17px;
+    color: #895D93;
+    margin-left: 6px;
+}
+
+.gmail:hover {
+    color: #572063;
+    background: #7a7a784d;
+    border-color: #895D93;
+}
+
+.face {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #895D93;
+}
+
+.face span{
+    font-weight: bold;
+    font-size: 17px;
+    color: #895D93;
+    margin-left: 6px;
+}
+
+.face:hover {
+    color: #572063;
+    background: #7a7a784d;
+    border-color: #895D93;
+}
+
+.botao-codigo i,
+.gmail i,
+.face i {
+    margin-right: 8px;
+}
+
+/* INPUTS */
+.inputs-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.inputs-login input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: transparent;
+    color: #572063;
+    font-size: 14px;
+    outline: none;
+}
+
+.inputs-login input:hover {
+    border-color: #895D93;
+    background: #7a7a784d;
+}
+
+.inputs-login input:focus {
+    border-color: #572063;
+}
+
+/* LINKS */
+.esqueci-senha {
+    text-align: right;
+    font-size: 12px;
+    color: #895D93;
+    cursor: pointer;
+}
+
+.esqueci-senha:hover {
+    text-decoration: underline;
+    color: #572063;
+}
+
+.cadastre-se{
+    color: #572063;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cadastre-se:hover {
+    text-decoration: underline;
+    color: #572063;
+}
+
+/* BOTÃO ENTRAR */
+.botao-entrar {
+    width: 100%;
+    padding: 12px;
+    background: #572063;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    border: 3px solid #572063;
+}
+
+.botao-entrar:hover {
+    background-color: #FBFF00;
+    color: #572063;
+    border: 3px solid #572063;
+}
+
+/* H3 */
+.h3 {
+font-size: 14px;
+color: #572063;
+margin: 10px 0;
+font-weight: 100;
+text-align: center;
+}
+
+/* LINHA DIVISÓRIA */
+.linha1{
+    border: 0;
+    height: 1px;
+    background: #572063;
+    margin-bottom: 70px;
+}
+
+.linha2{
+    border: 0;
+    height: 1px;
+    background: #572063;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
