@@ -1,1 +1,202 @@
+@media (max-width: 1000px) {
+    .fa-bars {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #572063;
+        margin-left: 60px;
+    }
 
+    header{
+        position: fixed;
+        left: 50%;
+        top: 10px;
+        width: 90%;
+        transform: translateX(-50%);
+        height: 50px;
+        background-color: #FBFF00;
+        color: #ffffff;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 0 auto;
+        border-radius: 50px;
+        z-index: 10;
+    }
+
+    .logo{
+        color: #572063;
+        font-family: "Griffy", system-ui;
+        font-weight: 1000;
+        font-style: normal;
+        font-size: 30px;
+        cursor: pointer;
+        text-align: center;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+    }
+    
+    .busca{
+        display: none;
+    }
+    
+    .botao-header{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end; /* Alinha os botões à direita */
+        gap: 5px; /* Espaçamento entre os botões */
+        margin-right: -80px; /* Espaçamento do lado direito */
+    }
+    
+    .carrinho, .conta{
+        height: 40px;
+        width: 40px;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #572063;
+        border: 3px solid #572063;
+        cursor: pointer;
+        margin-right: 5px;
+        transition: 0.3s;
+    }
+
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        position: fixed;
+        top: 62px; /* Espaço abaixo do header */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #FBFF00;
+        width: 55%;
+        height: 55px;
+        z-index: 10;
+        margin: 0;
+    
+        clip-path: polygon(
+            0 0,        /* canto superior esquerdo */
+            100% 0,     /* canto superior direito */
+            85% 100%,  /* canto inferior direito */
+            15% 100%       /* canto inferior esquerdo inclinado */
+        );
+    }
+
+    .busca2{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        height: 35px;
+        width: 60%;
+        border-radius: 50px;
+        cursor: text;
+        border: 3px solid #572063;
+        background-color: transparent;
+        outline: none;    
+        padding-left: 15px;
+    }
+    
+    nav ul{
+        display: none;
+        
+    }
+    
+    nav ul li a{
+        display: none;
+    }
+
+
+    .banner {
+        height: 300px;
+    }
+
+    .mais-vendidos{
+        border-top: 4px solid #fff;
+    }
+
+    .meninos{
+        border-top: 4px solid #fff;
+    }
+
+    .meninas{
+        border-top: 4px solid #fff;
+    }
+
+    .bebes{
+        border-top: 4px solid #fff;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 70px;
+        row-gap: 40px;
+    }
+
+    .card{
+        height: 350px;
+
+    }
+
+    .card h3{
+        bottom: 10px;
+    }
+    
+    .card span{
+        bottom: 25px;
+    }
+    
+    .card p{
+        bottom: 45px;
+    }
+    
+    .card button{
+        bottom: 75px;
+    }
+
+    .showmore {
+        padding: 10px 20px;
+    }
+
+    .banner .controls button{
+        transition: none;
+    }
+
+    .banner .controls button:active {
+        background-color: #3F0251;
+        color: white;
+
+    }
+
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .busca {
+        width: 100%;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .card button {
+        width: 100%;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .redes-sociais i {
+        font-size: 30px;
+    }
+}
