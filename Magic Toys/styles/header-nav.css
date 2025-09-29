@@ -18,7 +18,7 @@ header{
     z-index: 10;
 }
 
-.fa-bars{
+#menu{
     display: none;
 }
 
