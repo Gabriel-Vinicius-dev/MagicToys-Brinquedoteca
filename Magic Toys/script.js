@@ -112,6 +112,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const abrirLogin = document.getElementById("abrir-login");
   const fecharLogin = document.getElementById("fechar-login");
 
+  const abrirMenu = document.getElementById('menu');
+  const fecharMenu = document.getElementById('fechar-menu');
+  const sidebarMenu = document.getElementById('sidebar-menu');
+  
+
   // Função para atualizar badge e total
   function atualizarCarrinho() {
       const itens = listaCarrinho.querySelectorAll("li:not(#carrinho-vazio)");
@@ -195,7 +200,9 @@ botaoContinuarVazio.addEventListener("click", () => {
   abrirLogin.addEventListener("click", () => sidebarLogin.classList.add("ativo"));
   fecharLogin.addEventListener("click", () => sidebarLogin.classList.remove("ativo"));
   
-
+  // Abrir/fechar menu
+  abrirMenu.addEventListener("click", () => sidebarMenu.classList.add("ativo"));
+  fecharMenu.addEventListener("click", () => sidebarMenu.classList.remove("ativo"));
 
   const overlay = document.getElementById('overlay');
 
@@ -224,6 +231,12 @@ botaoContinuarVazio.addEventListener("click", () => {
   
   // Fechar login
   fecharLogin.addEventListener('click', () => fecharSidebar(sidebarLogin));
+
+  // Abrir menu
+  abrirMenu.addEventListener('click', () => abrirSidebar(sidebarMenu));
+
+  // Fechar menu
+  fecharMenu.addEventListener('click', () => fecharSidebar(sidebarMenu));
   
   // Fechar sidebar ao clicar no overlay
   overlay.addEventListener('click', () => {
@@ -233,5 +246,17 @@ botaoContinuarVazio.addEventListener("click", () => {
     if (sidebarLogin.classList.contains('ativo')) {
       fecharSidebar(sidebarLogin);
     }
+    if (sidebarMenu.classList.contains('ativo')) {
+      fecharSidebar(sidebarMenu);
+    }
+  });
+
+  // Fechar menu ao clicar em um link
+  document.querySelectorAll('#sidebar-menu .menu-list a').forEach(link => {
+    link.addEventListener('click', () => fecharSidebar(sidebarMenu));
   });
   
+
+
+
+
