@@ -13,7 +13,7 @@
 <body>
     <div id="overlay"></div>
     <header>
-        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i id="menu" class="fa fa-bars" aria-hidden="true"></i>
         <h2><a href="#" class="logo">MagicToys</a></h2>
         <input class="busca" type="text" placeholder="🔎 Busque sua diverção">
 
@@ -25,7 +25,7 @@
             </button>
         <button class="carrinho" id="abrir-carrinho">
             <svg width="25" height="25" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 2H6.36364L9.28727 17.3029C9.38703 17.829 9.66026 18.3017 10.0591 18.6381C10.458 18.9744 10.9571 19.1531 11.4691 19.1429H22.0727C22.5847 19.1531 23.0838 18.9744 23.4827 18.6381C23.8816 18.3017 24.1548 17.829 24.2545 17.3029L26 7.71429H7.45455M11.8182 24.8571C11.8182 25.4883 11.3298 26 10.7273 26C10.1248 26 9.63636 25.4883 9.63636 24.8571C9.63636 24.226 10.1248 23.7143 10.7273 23.7143C11.3298 23.7143 11.8182 24.226 11.8182 24.8571ZM23.8182 24.8571C23.8182 25.4883 23.3298 26 22.7273 26C22.1248 26 21.6364 25.4883 21.6364 24.8571C21.6364 24.226 22.1248 23.7143 22.7273 23.7143C23.3298 23.7143 23.8182 24.226 23.8182 24.8571Z" stroke="#572063" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 2H6.36364L9.28727 17.3029C9.38703 17.829 9.66026 18.3017 10.0591 18.6381C10.458 18.9744 10.9571 19.1531 11.4691 19.1429H22.0727C22.5847 19.1531 23.0838 18.9744 23.4827 18.6381C23.8816 18.3017 24.1548 17.829 24.2545 17.3029L26 7.71429H7.45455M11.8182 24.8571C11.8182 25.4883 11.3298 26 10.7273 26C10.1248 26 9.63636 25.4883 9.63636 24.8571C9.63636 24.226 10.1248 23.7143 10.7273 23.7143C11.3298 23.7143 11.8182 24.226 11.8182 24.8571ZM23.8182 24.8571C23.8182 25.4883 23.3298 26 22.7273 26C22.1248 26 21.6364 25.4883 21.6364 24.8571C21.6364 24.226 22.1248 23.7143 22.7273 23.7143C23.3298 23.7143 23.8182 24.226 23.8182 24.8571Z" stroke="#572063" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span id="badge-carrinho" class="badge">0</span>
         </button>
@@ -322,7 +322,29 @@
         <div class="vermais">
             <button class="showmore" id="verMais">Ver mais</button>
           </div>
+          <!-- Botão para abrir menu -->
+          
+        
+        <!-- Sidebar menu -->
+        <div id="sidebar-menu" class="sidebar-menu">
+            <div class="sidebar-header">
+              <h1 class="titulo-menu"><i class="fa fa-bars"></i>MENU</h1>
+              <button id="fechar-menu" class="fechar"><i class="fas fa-times"></i></button>
+            </div>
+            <hr class="linha3">
+            <ul class="menu-list">
+              <li><a id="linkMenu" href="#maisVendidos">Mais Vendidos</a></li>
+              <li><a id="linkMenu" href="#meninas">Meninas</a></li>
+              <li><a id="linkMenu" href="#meninos">Meninos</a></li>
+              <li><a id="linkMenu" href="#bebes">Bebês</a></li>
+            </ul>
+        </div>
 
+
+          <!-- Botão para abrir carrinho -->
+          
+        
+        <!-- Sidebar carrinho -->
           <div id="sidebar-carrinho" class="sidebar">
             <div class="topCarrinho">
               <h1 class="titulo1">
@@ -413,3 +435,4 @@
 
 </body>
 </html> 
+
