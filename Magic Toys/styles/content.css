@@ -94,7 +94,7 @@
     border-radius: 25px;
     height: 390px;
     width: 220px;
-    min-width: 220px;
+    /* min-width: 180px; */
     transition: 0.3s ease;
 }
 
@@ -190,3 +190,4 @@
     filter: opacity(1);
     box-shadow: #fff 0 0 20px;
 }
+
