@@ -34,10 +34,13 @@
     color: #895D93;
 }
 
+#fechar-carrinho:active {
+    color: #895D93;
+}
+
 .titulo1 {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     gap: 10px;
     font-size: 24px;
     font-weight: bold;
@@ -63,13 +66,8 @@
     margin-bottom: 20px;
 }
 
-
-/* ------------------------------
-    LISTA DO CARRINHO
------------------------------- */
-
 #lista-carrinho {
-    flex-grow: 1; /* ocupa espaço disponível */
+    flex-grow: 1;
     overflow-y: auto;
     padding: 10px 20px;
     margin: 0;
@@ -131,9 +129,15 @@
     transition: 0.3s;
 }
 
-/* ------------------------------
-            CONTEUDO DO CARRINHO
------------------------------- */
+.continuar-comprando:active {
+    background-color: #FBFF00;
+    color: #572063;
+    border: 3px solid #572063;
+    box-shadow: 0 0 15px #572063;
+    transform: translateY(-3px);
+    transition: 5s;
+}
+
 .infos-prod{
     width: 100%;
     height: 100px;
@@ -168,10 +172,7 @@
     transition: 0.3s;
 }
 
-.remover:active{
-    background-color: #895D93;
-    transition: 0.3s;
-}
+
 
 /* ------------------------------
     FOOTER DO CARRINHO
