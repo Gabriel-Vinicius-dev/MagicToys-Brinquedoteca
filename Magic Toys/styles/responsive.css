@@ -4,7 +4,6 @@
     }
 }
 
-
 @media (max-width: 1000px) {
     #menu {
         display: block;
@@ -148,7 +147,7 @@
 
     .card{
         height: 350px;
-
+        box-shadow: 0 0 25px #57206394;
     }
 
     .card h3{
@@ -164,11 +163,21 @@
     }
     
     .card button{
-        bottom: 75px;
+        bottom: 60px;
+        box-shadow: 0 0 10px #3f02516e;
+    }
+
+    .card button:active{
+        background-color: #3F0251;
+        color: #FBFF00;
+        box-shadow: 0 0 15px #3F0251;
+        transform: translateY(-3px);
+        transition: none;
     }
 
     .showmore {
         padding: 10px 20px;
+        box-shadow: #fff 0 0 20px;
     }
 
     .banner .controls button{
@@ -182,11 +191,42 @@
     }
 
     ::-webkit-scrollbar {
-        width: 3px;
+        width: 5px;
     }
     
     ::-webkit-scrollbar-track {
-        background: transparent;
+        background: #3F0251;
+    }
+}
+
+@media (max-width: 650px){
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .banner {
+        width: 100vw;
+        height: 100%;
+        max-width: 100vw;
+        margin-bottom: 150px;
+        margin-top: 70px;
+        top: 70px;
+    }
+    .banner .img {
+        width: 100vw;
+    }
+    .banner .img img {
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .banner .controls {
+        width: 90%;
+
     }
 }
 
@@ -198,11 +238,11 @@
     }
 }
 
-
 @media (max-width: 460px) {
+
     #menu {
-        font-size: 20px;
-        margin-left: 7%;
+        font-size: 18px;
+        margin-left: 5vw;
     }
 
     header {
@@ -227,17 +267,17 @@
     .logo {
         font-size: 26px;
         font-weight: 500;
-        margin-left: 70%;
+        margin-left: 35px;
     }
 
     .botao-header {
-        margin-left: 20%;
-        gap: 3px;
+        margin-right: -130px;
+        gap: 1px;
     }
 
     .botao-header svg {
-        width: 20px;
-        height: 20px;
+        width: 17px;
+        height: 17px;
     }
 
     .conta svg{
@@ -245,24 +285,18 @@
     }
     
     .carrinho svg{
-         right: 4px;
+         right: 3px;
     }
 
     .badge {
-        position: absolute;
-        top: -5px;   
-        right: -5px; 
-        background: #572063;
-        color: white;
         font-size: 11px;
         padding: 2px 4px;
-        border-radius: 50%;
-        font-weight: bold;
+
     }
 
     .carrinho, .conta {
-        height: 30px;
-        width: 30px;
+        height: 27px;
+        width: 27px;
         border: 2px solid #572063;
     }
 
@@ -277,10 +311,7 @@
         width: 60%;
         padding-left: 10px;
         border: 2px solid #572063;
-    }
-
-    .banner {
-        height: 200px;
+        font-size: 11px;
     }
 
     .produtos{
@@ -320,8 +351,9 @@
     }
     
     .card button{
-        bottom: 75px;
+        bottom: 60px;
     }
+
 
     .showmore {
         padding: 10px 20px;
@@ -336,6 +368,7 @@
         color: white;
     }
 
+    /* Fotter */
     footer {
         display: flex;
         flex-direction: column-reverse;
@@ -365,6 +398,38 @@
         font-size: 30px; 
     }
 
+    /* Modais */
 
+    #sidebar-menu {
+        width: 70%;
+    }
+
+    #sidebar-login {
+        width: 70%;
+    }
+
+    #sidebar-carrinho {
+        width: 70%;
+    }
+
+    .titulo1 svg {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .continuar-comprando {
+        font-size: 15px;
+        padding: 5px 20px;
+        white-space: nowrap;
+        box-sizing: border-box;
+
+    }
+
+    #btnTopo{
+
+        padding: 5px 9px;
+        font-size: 20px;
+    }
+    
 }
 
