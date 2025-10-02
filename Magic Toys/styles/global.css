@@ -39,6 +39,11 @@ border: 3px solid #fff;
 color: #fff;
 }
 
+#btnTopo:active {
+  background: #3F0251;
+  border: 3px solid #fff;
+  color: #fff;
+  }
 
 .hidden {
     display: none;
