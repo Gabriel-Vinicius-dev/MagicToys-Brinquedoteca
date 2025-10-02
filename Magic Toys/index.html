@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <title>MagicToys</title>
+    <link rel="icon" type="image/gif" href="imagens/bonzi-buddy-uwu.gif">
 </head>
 <body>
     <div id="overlay"></div>
@@ -45,16 +46,29 @@
 
     <main>
         <div class="banner">
-            <div class="img">
-                <img src="imagens/banner01.jpg" alt="Slide 1">
-                <img src="imagens/banner01.jpg" alt="Slide 2">
-                <img src="imagens/banner01.jpg" alt="Slide 3">
-            </div>
-            <div class="controls">
-                <button id="prev">❮</button>
-                <button id="next">❯</button>
-            </div>
+        <div class="img">
+            <picture>
+            <source media="(max-width: 550px)" srcset="imagens/banner/banner-mobile-01.webp">
+            <img src="imagens/banner/banner-01.webp" alt="Banner 1">
+            </picture>
+
+            <picture>
+            <source media="(max-width: 550px)" srcset="imagens/banner/banner-mobile-02.webp">
+            <img src="imagens/banner/banner-03.webp" alt="Banner 2">
+            </picture>
+
+            <picture>
+            <source media="(max-width: 550px)" srcset="imagens/banner/banner-mobile-03.webp">
+            <img src="imagens/banner/banner-02.webp" alt="Banner 3">
+            </picture>
         </div>
+
+        <div class="controls">
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </div>
+        </div>
+
         
 
 
@@ -63,59 +77,59 @@
             <div class="section">      
             <div class="produtos">
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninos-02.jpg" alt="Robô Caranguejo">
+                    <h4>Robô Caranguejo</h4>
+                    <span>R$ 262,60</span>
+                    <p>R$ 202,70</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninas-01.jpg" alt="Lousa Magnética">
+                    <h4>Lousa Magnética</h4>
+                    <span>R$ 273,10</span>
+                    <p>R$ 164,30</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/bebeReborn.webp" alt="Boneca Reborn">
+                    <h4>Boneca Reborn</h4>
+                    <span>R$ 1.250,00</span>
+                    <p>R$ 989,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninos-04.jpg" alt="Robô Tiranossauro">
+                    <h4>Robô Tiranossauro</h4>
+                    <span>R$ 265,70</span>
+                    <p>R$ 210,60</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninas-05.webp" alt="Pia Lava Louça">
+                    <h4>Pia Lava Louça</h4>
+                    <span>R$ 97,90</span>
+                    <p>R$ 78,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/bebes-02.jpg" alt="Mordedor de Silicone">
+                    <h4>Mordedor de Silicone</h4>
+                    <span>R$ 45,90</span>
+                    <p>R$ 38,50</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninos-06.jpg" alt="Construa Seu Vulcão">
+                    <h4>Construa Seu Vulcão</h4>
+                    <span>R$ 222,50</span>
+                    <p>R$ 162,00</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninas-02.jpg" alt="Casinha de Bonecas">
+                    <h4>Casinha de Bonecas</h4>
+                    <span>R$ 450,00</span>
+                    <p>R$ 329,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
             </div>
@@ -129,59 +143,59 @@
             <div class="section">
             <div class="produtos">
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
+                    <img src="imagens/section/meninas-01.jpg" alt="Toy 1">
+                    <h4>Lousa Magnética</h4>
+                    <span>R$ 273,10</span>
+                    <p>R$ 164,30</p>
+                    <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/section/meninas-02.jpg" alt="Toy 1">
+                    <h4>Casinha de Bonecas</h4>
                     <span>R$ 999,99</span>
                     <p>R$ 49,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninas-03.webp" alt="Toy 1">
+                    <h4>Kit Médico Infantil</h4>
+                    <span>R$ 139,90</span>
+                    <p>R$ 89,99</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
-                    <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
-                </div>
-                <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninas-04.webp" alt="Toy 1">
+                    <h4>Fogão Big Chef</h4>
+                    <span>R$ 151,90</span>
+                    <p>R$ 113,96</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninas-05.webp" alt="Toy 1">
+                    <h4>Pia Lava Louça</h4>
+                    <span>R$ 97,90</span>
+                    <p>R$ 78,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninas-06.jpg" alt="Toy 1">
+                    <h4>Dominó Doll</h4>
+                    <span>R$ 34,20</span>
+                    <p>R$ 26,60</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninas-07.jpg" alt="Toy 1">
+                    <h4>Jogo da Memória</h4>
+                    <span>R$ 34,20</span>
+                    <p>R$ 26,60</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninas-08.jpg" alt="Toy 1">
+                    <h4>Berço de Bonecas</h4>
+                    <span>R$ 241,80</span>
+                    <p>R$ 174,70</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
             </div>
@@ -195,59 +209,59 @@
             <div class="section">
             <div class="produtos">
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninos-01.jpg" alt="Toy 1">
+                    <h4>Notebook de Madeira</h4>
+                    <span>R$ 302,00</span>
+                    <p>R$ 243,40</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninos-02.jpg" alt="Toy 1">
+                    <h4>Robô Caranguejo</h4>
+                    <span>R$ 262,60</span>
+                    <p>R$ 202,70</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninos-03.jpg" alt="Toy 1">
+                    <h4>Ferramentas Infantil</h4>
+                    <span>R$ 273,50</span>
+                    <p>R$ 204,70</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninos-04.jpg" alt="Toy 1">
+                    <h4>Robô Tiranossauro</h4>
+                    <span>R$ 265,70</span>
+                    <p>R$ 210,60</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninos-05.jpg" alt="Toy 1">
+                    <h4>Ciência do Clima</h4>
+                    <span>R$ 240,20</span>
+                    <p>R$ 182,70</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninos-06.jpg" alt="Toy 1">
+                    <h4>Construa Seu Vulcão</h4>
+                    <span>R$ 222,50</span>
+                    <p>R$ 162,00</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninos-07.jpg" alt="Toy 1">
+                    <h4>Robô Aranha</h4>
+                    <span>R$ 281,70</span>
+                    <p>R$ 222,40</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/meninos-08.jpg" alt="Toy 1">
+                    <h4>Mão Robótica</h4>
+                    <span>R$ 219,10</span>
+                    <p>R$ 162,50</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
             </div>
@@ -261,58 +275,58 @@
             <div class="section">
             <div class="produtos">
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/bebeReborn.webp" alt="Boneca Reborn realista">
+                    <h4>Boneca Reborn</h4>
+                    <span>R$ 1.250,00</span>
+                    <p>R$ 989,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/bebes-02.jpg" alt="Mordedor de Silicone">
+                    <h4>Mordedor de Silicone</h4>
+                    <span>R$ 45,90</span>
+                    <p>R$ 38,50</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/bebes-03.jpg" alt="Tapete de Atividades">
+                    <h4>Tapete de Atividades</h4>
+                    <span>R$ 320,00</span>
+                    <p>R$ 259,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/bebes-04.webp" alt="Blocos de Encaixe Grandes">
+                    <h4>Blocos de Encaixe</h4>
+                    <span>R$ 150,00</span>
+                    <p>R$ 119,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/bebes-05.webp" alt="Chocalho de Mão">
+                    <h4>Chocalho de Mão</h4>
+                    <span>R$ 29,90</span>
+                    <p>R$ 19,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/bebes-06.webp" alt="Móbile Musical para Berço">
+                    <h4>Móbile Musical</h4>
+                    <span>R$ 199,90</span>
+                    <p>R$ 159,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
-                    <p>R$ 49,90</p>
+                    <img src="imagens/section/bebes-07.webp" alt="Urso de Pelúcia">
+                    <h4>Labubu de Pelúcia</h4>
+                    <span>R$ 89,90</span>
+                    <p>R$ 59,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
                 <div class="card hidden">
-                    <img src="imagens/bebeReborn.webp" alt="Toy 1">
-                    <h3>Boneca Fada</h3>
-                    <span>R$ 999,99</span>
+                    <img src="imagens/section/bebes-08.webp" alt="Kit Banho de Bebê">
+                    <h4>Torre Mágica</h4>
+                    <span>R$ 65,00</span>
                     <p>R$ 49,90</p>
                     <button class="adicionar"><i class="fas fa-shopping-cart"></i> Carrinho</button>
                 </div>
@@ -349,7 +363,7 @@
             <div class="topCarrinho">
               <h1 class="titulo1">
                 <svg width="25" height="25" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 2H6.36364L9.28727 17.3029C9.38703 17.829 9.66026 18.3017 10.0591 18.6381C10.458 18.9744 10.9571 19.1531 11.4691 19.1429H22.0727C22.5847 19.1531 23.0838 18.9744 23.4827 18.6381C23.8816 18.3017 24.1548 17.829 24.2545 17.3029L26 7.71429H7.45455M11.8182 24.8571C11.8182 25.4883 11.3298 26 10.7273 26C10.1248 26 9.63636 25.4883 9.63636 24.8571C9.63636 24.226 10.1248 23.7143 10.7273 23.7143C11.3298 23.7143 11.8182 24.226 11.8182 24.8571ZM23.8182 24.8571C23.8182 25.4883 23.3298 26 22.7273 26C22.1248 26 21.6364 25.4883 21.6364 24.8571C21.6364 24.226 22.1248 23.7143 22.7273 23.7143C23.3298 23.7143 23.8182 24.226 23.8182 24.8571Z" stroke="#572063" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 2H6.36364L9.28727 17.3029C9.38703 17.829 9.66026 18.3017 10.0591 18.6381C10.458 18.9744 10.9571 19.1531 11.4691 19.1429H22.0727C22.5847 19.1531 23.0838 18.9744 23.4827 18.6381C23.8816 18.3017 24.1548 17.829 24.2545 17.3029L26 7.71429H7.45455M11.8182 24.8571C11.8182 25.4883 11.3298 26 10.7273 26C10.1248 26 9.63636 25.4883 9.63636 24.8571C9.63636 24.226 10.1248 23.7143 10.7273 23.7143C11.3298 23.7143 11.8182 24.226 11.8182 24.8571ZM23.8182 24.8571C23.8182 25.4883 23.3298 26 22.7273 26C22.1248 26 21.6364 25.4883 21.6364 24.8571C21.6364 24.226 22.1248 23.7143 22.7273 23.7143C23.3298 23.7143 23.8182 24.226 23.8182 24.8571Z" stroke="#572063" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 MEU CARRINHO
                 <button id="fechar-carrinho" class="fechar"><i class="fas fa-times"></i></button>
@@ -424,13 +438,9 @@
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-whatsapp"></i>
         </div>
-    </footer>
+    </footer>   
 
-<!-- <script src="scripts/cart.js"></script>
-<script src="scripts/back-to-top.js"></script>
-<script src="scripts/banner-slider.js"></script>
-<script src="scripts/content-toggles.js"></script>
-<script src="scripts/modals-and-sidebar.js"></script> -->
+
 <script src="script.js"></script>
 
 </body>
