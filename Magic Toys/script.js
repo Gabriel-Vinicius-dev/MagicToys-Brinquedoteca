@@ -152,7 +152,7 @@ function atualizarCarrinho() {
 BotoesAdicionar.forEach(botao => {
   botao.addEventListener("click", () => {
     const card = botao.closest(".card");
-    const nome = card.querySelector("h3") ? card.querySelector("h3").textContent : 'Produto Desconhecido';
+    const nome = card.querySelector("h4") ? card.querySelector("h4").textContent : 'Produto Desconhecido';
     const antigoPrecoElement = card.querySelector("span");
     const antigoPreco = antigoPrecoElement ? antigoPrecoElement.textContent : ''; // Usa ' ' se não encontrar
     const precoElement = card.querySelector("p");
@@ -264,8 +264,3 @@ overlay.addEventListener('click', () => {
 document.querySelectorAll('#sidebar-menu .menu-list a').forEach(link => {
   link.addEventListener('click', () => fecharSidebar(sidebarMenu));
 });
-
-
-
-
-
